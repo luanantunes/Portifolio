@@ -1,0 +1,14 @@
+from transformers import pipeline
+
+#Carregar o modelo de analise de sentimetos
+classificar = pipeline('sentiment-analysis')
+
+def analyze_sentiment(text):
+    result = classifier(text):
+    return result
+
+if _name_ == "_main_":
+    #teste de modelo
+    text = "Eu amo esse produto"
+    sentiment = analyze_sentiment(text)
+    print(sentiment)
