@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio de Luan Lima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Olá, me chamo Luan</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle">Modo Escuro</button>
+        </div>
+    </header>
+
+<main>
+    <section id="about" class="container">
+        <h2>Sobre Mim</h2>
+        <P>Sou um estudante apaixonado por tecnologia e desenvolvimento de software.</P>
+    </section>
+    
+    <section id="skills" class="container">
+        <h2>Habilidades</h2>
+       <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML/CSS></div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js
+       </div> 
+    </section>
+    
+    <section id="Projects" class="container">
+        <h2>Projetos</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="projeto1.jpg" alt="Imagem do Projeto 1">
+            <h3>Projeto 1</h3>
+                <p>Descrição do Projeto.</p>
+                <a href="https://github.com/seurepositorio" target="_blank">Ver no GitHub</a>
+        </div>
+        <!--Aqui mais projetos se necessario-->>
+        </section>
+        
+        <section id="experience" class="container">
+            <h2>Experiencia<h2>
+                <div class="experience-item">
+                    <h3>Estágio em infraestrutura de Ti</h3>
+            <p>Empresa Quality Sistemas - abril 2024 ate o momento</p>
+            <p>Trabalhei na infraestrutura de Ti da empresa</p>
+            </div>
+        </section> 
+
+        <section id="education" class="container">
+            <h2>Formação academica</h2>
+            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas - UCDB (2023 - 2025)</p>
+            <p>Curso de Estrutura de Dados em Python - Senac HUB Academy (2022)</p>
+        </section>
+
+        <section id="testimonials" class="container testimonials">
+            <h2>Depoimentos</h2>
+            <div class="testimonials">
+                <p>"Luan é um profissional excepcional. Sua dedicação e habilidades são admiradas por todos que trabalham com ele."</p>
+                <p><strong>João Silva</strong>. CEO da empresa</p>
+            </div>
+
+            <div class="testimonials">
+                <p>"Trabalhar com Luan foi uma experiencia incrivel. Ele sempre entrega resultados de alta qualidade."</p>
+                <p><strong>Maria Oliveira</strong>, Gerente de Projeto</p>
+            </div>
+        </section>   
+
+        <section id="contact" class="container">
+            <h2>Contato</h2>
+            <form id ="contactForm" action="#" method="post">
+                <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                <label for="email">email</label>>
+                <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+                </form>
+                <div id="responseMessage"></div>
+        </section>
+        
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Luan Lima. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="https://github.com/meuperfil" target="_blank" aria-label="GitHub"><img src="github-icon.png" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/meuperfil" target="_blank" aria-label="linkedin"><img src="linkedin-icon.png" alt="linkedin"></a>
+        </div>
+    </div>
+</footer>
+    
+    <script src="script.js"></script>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Chatbot</h3>
+            <button id="chatbotClose">$times;</button>
+            </div>
+            <div class="chatbot-body">
+                <div id="chatMessages"></div>
+                <input type="text" id="chatImput" placeholder="Digite sua mensagem...">
+                <button id="chatSend">Enviar</button>
+        </div>
+    </div>            
+</body>     
+</html>
